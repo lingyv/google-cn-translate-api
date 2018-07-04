@@ -2,7 +2,7 @@ var querystring = require('querystring');
 
 var got = require('got');
 var safeEval = require('safe-eval');
-var token = require('google-translate-token');
+var token = require('china-google-translate-token');
 
 var languages = require('./languages');
 
@@ -30,7 +30,7 @@ function translate(text, opts) {
     opts.to = languages.getCode(opts.to);
 
     return token.get(text).then(function (token) {
-        var url = 'https://translate.google.com/translate_a/single';
+        var url = 'https://translate.google.cn/translate_a/single';
         var data = {
             client: 't',
             sl: opts.from,

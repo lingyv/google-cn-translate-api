@@ -12,7 +12,7 @@ A **free** and **unlimited** API for Google Translate :dollar::no_entry_sign:
 ## Install 
 
 ```
-npm install --save google-translate-api
+npm install --save china-google-translate-api
 ```
 
 ## Usage
@@ -20,7 +20,7 @@ npm install --save google-translate-api
 From automatic language detection to English:
 
 ``` js
-const translate = require('google-translate-api');
+const translate = require('china-google-translate-api');
 
 translate('Ik spreek Engels', {to: 'en'}).then(res => {
     console.log(res.text);
